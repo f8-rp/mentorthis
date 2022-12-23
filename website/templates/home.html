@@ -1,0 +1,55 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+  <p style="font-size: 20px; margin-left:-22%; margin-top:5%;">Logged in as {{ user.first_name }}</p>
+{% endif %}
+<div class="jumbotron" style="margin-top:5%">
+  <h1 class="display-4">Welcome to your MentorThis dashboard</h1>
+  <hr class="my-4">
+  <p class="lead">Here you can find all students/researchers in need of support & Get advice here</p>
+  <hr class="my-4">
+  <p></p>
+  <a class="btn btn-primary btn-lg" href="#note" role="button">Ask a question/Get Advice</a>
+</div>
+
+<h1 style="margin-top:5%;">Your Current Advice Requests</h1>
+<br>
+{% for note in user.notes %}
+  <li class="list-group-item">
+    {{ note.data }}
+    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </li>
+{% endfor %}
+
+<h1 style="margin-top:5%">Help out your peers</h1>
+
+{% for e in users %}
+{% if e.notes %}
+<div class="card" style="width: 18rem; margin-top:5%;">
+  <div class="card-body">
+    <h5 class="card-title">{{e.first_name}}</h5>
+    <p class="card-text">{{e.notes[0].data}}</p>
+    <a href='/portfolio{{e.id}}' class="btn btn-primary">Contact Me</a>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<form method="POST">
+  <h1 class="primary" style="margin-top:10%">Your Problem/Project</h1>
+  <p>Brief 500 character description</p>
+  <textarea name="note" id="note" class="form-control"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Seek Help</button>
+  </div>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

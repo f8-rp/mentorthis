@@ -1,0 +1,370 @@
+.entire-container {
+    flex: 1;
+    background-color: black;
+    width: 150%;
+    margin-left: -26%;
+}
+
+.side {
+    margin-left:5%;
+}
+
+.rounded-title{
+    background-color: lightseagreen;
+    width:50vh;
+    height:20vh;
+    border-width:20px;
+    border-radius: 50px;
+    align-items:center;
+}
+
+.centeredtitle{
+    padding:5vh;
+    margin-left:-1%;
+}
+
+#mainfocus2{
+    width:80%;
+    border-width:50px;
+    border-radius:30px;
+}
+
+#mainfocus{
+    width:80%;
+    border-width:50px;
+    border-radius:30px;
+}
+
+.image-overlap{
+    margin-left:45%;
+    margin-bottom:36.5%;
+}
+
+.image-overlap2{
+    margin-left:45%;
+    margin-top:-17.63%;
+}
+.parent {
+    position: relative;
+    width: 100.6%;
+    min-height: 150vh;
+    max-height:150vh;
+    background-color: #343A3F;
+}
+
+.child {
+    font-size: 10vw;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #343A3F;
+    z-index: 1;
+}
+
+.child--absolute {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-image: linear-gradient(to bottom left, lightseagreen, green);
+    z-index: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    font-size: 36px;
+    color: #333;
+    animation: fade-in 8s ease;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size:40px;
+    margin-left:5%;
+    margin-top:5%;
+  }
+
+  .larger{
+    font-size:30px;
+  }
+
+  .quote-container {
+    position: relative;
+    display: inline-block;
+    margin-left:5%;
+    height:3vh;
+    position:absolute;
+    margin-top:-20%;
+  }
+  
+  .quote {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border-width:50px;
+    border-radius:30px;
+  }
+  
+  .quote:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .quote:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 0;
+    height: 0;
+  }
+  
+  .animate {
+    animation: fade 2s ease-in-out infinite;
+  }
+  
+  @keyframes fade {
+    0% {
+        background-color:lightgray
+    }
+    50% {
+        background-color:lightgreen
+    }
+    100% {
+        background-color:lightgray
+    }
+  }
+
+  @keyframes changeText {
+    0% {
+        color:lightgray
+    }
+    50% {
+        color:lightgreen
+    }
+    100% {
+        color:lightgray
+    }
+  }
+  
+  .changeText{
+    animation: changeText 2s ease-in-out infinite
+  }
+  
+  /* CSS */
+#btn-get-started {
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  #btn-get-started:hover {
+    transform: scale(1.1);
+  }
+
+  .btncontainer{
+    margin-left:5%;
+    margin-top:-7%;
+  }
+  
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.largersize{
+  width:50%;
+  white-space: nowrap;
+}
+
+.navbar{
+  align-items:center;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+#forgot-pass {
+  color: #2dbd6e;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: right;
+}
+#card {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 600px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+#card-content {
+  padding: 12px 44px;
+}
+#card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+#signup {
+  color: #2dbd6e;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 16px;
+  text-align: center;
+}
+#submit-btn {
+  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+}
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #24c64f;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 1px;
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 14px;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 89px;
+}
+
+
+.button_container {
+  margin-top:20%;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description, .link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+	font-size: 35px;
+}
+
+.btna {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btna span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btna:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #78c7d2;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btna:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.linka {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.linka a {
+  color: #000;
+  font-size: 25px; 
+}

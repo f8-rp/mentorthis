@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
+<h1 class="text-center" style="margin-top:5%;">{{displayeduser.first_name}}'s Portfolio</h1>
+<h2 class="text-center" style="margin-top:5%">Bio:</h2>
+<div class="text-center justify-content-center mx-auto" style="background-color:rgb(231, 231, 231); width:50%; align-self:center;"><p>
+    {{displayeduser.bio}}
+</p></div>
+
+<h2 class="text-center" style="margin-top:5%">Email</h2>
+<div class="text-center justify-content-center mx-auto" style="background-color:rgb(231, 231, 231); width:50%; align-self:center;"><p>
+    {{displayeduser.email}}
+</p></div>
+{% endblock %}

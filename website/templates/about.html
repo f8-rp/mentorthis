@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="entire-container">
+    <div class="parent">
+        <div class="child">
+            <br>
+            <div class="rounded-title side">
+                <h1 class="centeredtitle changeText" style="font-size: 80px;">MentorThis</h1>
+            </div>
+            <div class="quote-container side">
+                <p class="quote" style="font-size:10; color:black;">"When you want something, all the universe conspires in helping you achieve it"</p>
+            </div> 
+            
+            <p id="typewriter"></p>
+
+            <div class="btncontainer"><button id="btn-get-started" onclick="location.href = '/sign-up'">Get Started</button></div>
+
+             <div class="image-overlap2">
+                <img src="static/homepage.png" alt="Home Page" id="mainfocus">
+            </div>
+        </div>
+        <div class="child child--absolute">
+            <div class="image-overlap">
+                <img src="static/homepage.png" alt="Home Page" id="mainfocus">
+            </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

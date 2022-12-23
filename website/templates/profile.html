@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<h1 class="text-center" style="margin-top:5%;">Welcome, {{user.first_name}}</h1>
+<div class="mb-3 row">
+    <form method="POST">
+        <h3 style="margin-top:10%;">Update your bio (Max 5000 characters)</h3>
+        <textarea name="bio" id="bio" class="form-control" style="width:150%; height:60%;"></textarea>
+        <br />
+        <div align="center" style="margin-left:-85%;">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </form>
+</div>
+<div class="button_container">
+	<button onclick="location.href = '/portfolio{{user.id}}'" class="btna"><span>Click For Your Portfolio Page</span></button>
+</div>
+<br>
+<br><br>
+<br>
+<br>
+{% endblock %}
